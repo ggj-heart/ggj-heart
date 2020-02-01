@@ -9,7 +9,7 @@ public class Move2D : MonoBehaviour
     public float jumpForce = 8f;
     public bool isGrounded = true;
     //public Rigidbody2D groundDetector;
-    private float horizontalAxis = 0f;
+    public float horizontalAxis = 0f;
     private bool jumpPressed = false;
 
     // Start is called before the first frame update
@@ -29,6 +29,7 @@ public class Move2D : MonoBehaviour
     void Update()
     {
         horizontalAxis = Input.GetAxis("Horizontal");
+        GetComponent<SpriteRenderer>().flipX = (horizontalAxis < 0);
         if (Input.GetButtonDown("Jump"))
         {
             jumpPressed = true;
