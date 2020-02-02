@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 // based on https://www.youtube.com/watch?v=L6Q6VHueWnU
 public class Move2D : MonoBehaviour
 {
-    public string nextSceneName;
     public float horizontalSpeed = 5f;
     public float jumpForce = 8f;
     public bool isGrounded = true;
@@ -60,14 +59,6 @@ public class Move2D : MonoBehaviour
     {
         //show animate out animation
         yield return new WaitForSeconds(1f);
-        var nextScene = SceneManager.GetSceneByName(nextSceneName);
-        if (nextScene != null)
-        {
-            SceneManager.LoadScene(nextScene.buildIndex);
-        }
-        else
-        {
-            Debug.Log("Could not load next scene: " + nextSceneName);
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
