@@ -736,7 +736,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1829112033}
   selectedCommands:
-  - {fileID: 1829112047}
+  - {fileID: 1829112045}
   variables: []
   description: 
   stepPause: 0
@@ -1032,7 +1032,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "Waking.  Am I ready for what\u2019s out there?  I have to try.\r\n"
+  storyText: "Waking.  Am I ready for what\u2019s out there? I have to get to the
+    train so I'm not late for work.  I have to try.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

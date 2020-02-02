@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 979044980}
   - component: {fileID: 979044979}
   - component: {fileID: 979044986}
+  - component: {fileID: 979044987}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -424,6 +425,7 @@ MonoBehaviour:
   - {fileID: 979044981}
   - {fileID: 979044979}
   - {fileID: 979044980}
+  - {fileID: 979044987}
   - {fileID: 979044986}
   suppressAllAutoSelections: 0
 --- !u!114 &979044984
@@ -442,7 +444,7 @@ MonoBehaviour:
   scrollPos: {x: 0, y: 0}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 330
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -453,7 +455,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 979044983}
   selectedCommands:
-  - {fileID: 979044986}
+  - {fileID: 979044987}
   variables: []
   description: 
   stepPause: 0
@@ -481,7 +483,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &979044986
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -498,6 +500,30 @@ MonoBehaviour:
     stringVal: Bedroom-1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &979044987
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979044978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  spriteRenderer: {fileID: 0}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1008693854
 GameObject:
   m_ObjectHideFlags: 1

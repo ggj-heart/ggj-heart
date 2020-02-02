@@ -4123,11 +4123,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 2998.3325, y: 1370.838}
+  scrollPos: {x: 2961.7625, y: 1212.4276}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -4071.385
@@ -4136,8 +4136,7 @@ MonoBehaviour:
     height: 2818.8503
   selectedBlocks:
   - {fileID: 1390555298}
-  selectedCommands:
-  - {fileID: 1390555345}
+  selectedCommands: []
   variables:
   - {fileID: 1390555396}
   description: 'Example scene from Sherlock: The Game Is On'
@@ -4208,7 +4207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -2590.3325
+    x: -2591.3962
     y: -1083.838
     width: 120
     height: 40
@@ -4525,7 +4524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2440.3325
     y: -800.838
-    width: 142.37737
+    width: 138.6391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6056,7 +6055,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2289.3325
     y: -878.838
-    width: 161.39624
+    width: 156.945
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6283,7 +6282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2754.3325
     y: -883.838
-    width: 140.56604
+    width: 136.71216
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6972,7 +6971,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2599.4058
     y: -1010.3363
-    width: 147.81133
+    width: 144.41992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
