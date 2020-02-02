@@ -5107,6 +5107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072a979a97259654a8a9158c1c6a98e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: Train-3
   horizontalSpeed: 10
   jumpForce: 16
   isGrounded: 1

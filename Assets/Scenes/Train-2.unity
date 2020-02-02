@@ -755,7 +755,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Bedroom-3
+    stringVal: Bedroom-2
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1660916734

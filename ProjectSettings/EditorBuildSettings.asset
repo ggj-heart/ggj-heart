@@ -5,7 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 03563a2442b9ceb40ae692f874f28e2a
+  - enabled: 1
+    path: Assets/Scenes/Bedroom-1.unity
+    guid: 1c9ab7230d8fdaa479ed437f6d53e0b6
+  - enabled: 1
+    path: Assets/Scenes/Journey-1.unity
+    guid: e45b1d5c35ffc9143a4e65ce9e950200
+  - enabled: 1
+    path: Assets/Scenes/Train-1.unity
+    guid: cfe00e0565a2ff24c9fac6ac60417168
+  - enabled: 1
+    path: Assets/Scenes/Bedroom-2.unity
+    guid: ff5cc643175409c42aae56d6b21db0f5
+  - enabled: 1
+    path: Assets/Scenes/Journey-2.unity
+    guid: 99c9f770813939044815eb6f4bb95ab3
+  - enabled: 1
+    path: Assets/Scenes/Train-2.unity
+    guid: 899a10a4cbcd92f4cba0a37d1b6f4158
+  - enabled: 1
+    path: Assets/Scenes/Bedroom-3.unity
+    guid: e84bd49f1f41a9c4aba09c74b7709627
+  - enabled: 1
+    path: Assets/Scenes/Journey-3.unity
+    guid: d3a490b3236040043b8f3c73db75b574
+  - enabled: 1
+    path: Assets/Scenes/Train-3.unity
+    guid: b5202d5d8329bb8468224400f89b6096
   m_configObjects: {}
