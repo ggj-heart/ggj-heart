@@ -830,6 +830,7 @@ GameObject:
   - component: {fileID: 1829112045}
   - component: {fileID: 1829112048}
   - component: {fileID: 1829112036}
+  - component: {fileID: 1829112039}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -864,7 +865,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1829112033}
   selectedCommands:
-  - {fileID: 1829112036}
+  - {fileID: 1829112046}
   variables: []
   description: 
   stepPause: 0
@@ -891,7 +892,7 @@ MonoBehaviour:
   itemId: 1
   indentLevel: 0
   storyText: "Back home.  Where it\u2019s safe.  No threats, no risks.  Now fading
-    to sleeping.  Dreaming.\r\n"
+    to sleep.  Dreaming.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -934,6 +935,7 @@ MonoBehaviour:
   - {fileID: 1829112047}
   - {fileID: 1829112046}
   - {fileID: 1829112045}
+  - {fileID: 1829112039}
   - {fileID: 1829112048}
   suppressAllAutoSelections: 0
 --- !u!114 &1829112034
@@ -985,7 +987,7 @@ MonoBehaviour:
     audioSourceVal: {fileID: 451374555}
   startVolume: 1
   endVolume: 1
-  fadeDuration: 0
+  fadeDuration: 2
   waitUntilFinished: 0
   audioSourceOLD: {fileID: 0}
 --- !u!114 &1829112037
@@ -1044,6 +1046,29 @@ MonoBehaviour:
   - {fileID: 1829112040}
   - {fileID: 1829112041}
   suppressAllAutoSelections: 0
+--- !u!114 &1829112039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829112030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 0
+  control: 1
+  _audioSource:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 451374555}
+  startVolume: 1
+  endVolume: 1
+  fadeDuration: 2
+  waitUntilFinished: 0
+  audioSourceOLD: {fileID: 0}
 --- !u!114 &1829112040
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1212,7 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: 'I cannot move and I watch helplessly as the blackness envelops my body
+  storyText: 'I cannot move and I watch helplessly as the darkness envelops my body
     until I am curled up in a world of black.  '
   description: 
   character: {fileID: 0}
@@ -1241,7 +1266,7 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 0
   storyText: I am in a store, with friends.  A shadowy figure enters.  The figure
-    begins spreading throughout the room, as a coat of blackness.  My friends fade
+    begins spreading throughout the room, like a coat of darkness.  My friends fade
     away.
   description: 
   character: {fileID: 0}
