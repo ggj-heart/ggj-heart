@@ -986,11 +986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 13.02062, y: -0.24742204}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1660916734}
   selectedCommands:
-  - {fileID: 1660916739}
+  - {fileID: 1660916733}
   variables: []
   description: 
   stepPause: 0
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: Title Screen
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: db081e6574c029e46932ada6644dee2c, type: 3}
   sceneNameOLD: 
 --- !u!114 &1660916734
 MonoBehaviour:
