@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // based on https://www.youtube.com/watch?v=L6Q6VHueWnU
 public class Move2D : MonoBehaviour
@@ -8,7 +9,7 @@ public class Move2D : MonoBehaviour
     public float horizontalSpeed = 5f;
     public float jumpForce = 8f;
     public bool isGrounded = true;
-    //public Rigidbody2D groundDetector;
+    public bool isAtEnd = false;
     public float horizontalAxis = 0f;
     private bool jumpPressed = false;
 
@@ -45,8 +46,19 @@ public class Move2D : MonoBehaviour
         jumpPressed = false;
     }
 
-    // bool IsGrounded()
-    // {
-    //     groundDetector.is
-    // }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Finish")
+        {
+            isAtEnd = true;
+            StartCoroutine(LoadSceneAfterTransition());
+        }
+    }
+
+    private IEnumerator LoadSceneAfterTransition()
+    {
+        //show animate out animation
+        yield return new WaitForSeconds(1f);        //load the scene we want
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
