@@ -34,7 +34,7 @@ EditorBuildSettings:
     guid: e84bd49f1f41a9c4aba09c74b7709627
   - enabled: 1
     path: Assets/Scenes/Journey-3.unity
-    guid: a91c0a8a4ba945443ada02ec3c667520
+    guid: d3a490b3236040043b8f3c73db75b574
   - enabled: 1
     path: Assets/Scenes/Train-3.unity
     guid: 2d2c2be93d482c242ad1663e610ebf13
@@ -43,7 +43,7 @@ EditorBuildSettings:
     guid: 96ac796a7e8d5a04b961462a116d0ce6
   - enabled: 1
     path: Assets/Scenes/Journey-4.unity
-    guid: d3a490b3236040043b8f3c73db75b574
+    guid: a91c0a8a4ba945443ada02ec3c667520
   - enabled: 1
     path: Assets/Scenes/Train-4.unity
     guid: f6a83aaf58e30e64bb1fa0e5fb5f3dac
