@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: 1f82cf0ccde5c7748acf99024d9c61e3
+  - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 0f32e9872b5e6124a8804c71040ae408
   - enabled: 1
@@ -24,20 +27,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Journey-2.unity
     guid: 99c9f770813939044815eb6f4bb95ab3
   - enabled: 1
-    path: Assets/Scenes/Train-3.unity
-    guid: 2d2c2be93d482c242ad1663e610ebf13
+    path: Assets/Scenes/Train-2.unity
+    guid: 61df251bf9d445848811d226a13ec6b1
   - enabled: 1
     path: Assets/Scenes/Bedroom-3.unity
     guid: e84bd49f1f41a9c4aba09c74b7709627
   - enabled: 1
     path: Assets/Scenes/Journey-3.unity
-    guid: d3a490b3236040043b8f3c73db75b574
+    guid: a91c0a8a4ba945443ada02ec3c667520
+  - enabled: 1
+    path: Assets/Scenes/Train-3.unity
+    guid: 2d2c2be93d482c242ad1663e610ebf13
   - enabled: 1
     path: Assets/Scenes/Bedroom-4.unity
     guid: 96ac796a7e8d5a04b961462a116d0ce6
   - enabled: 1
     path: Assets/Scenes/Journey-4.unity
-    guid: 1b1df9da77fc8b2418ccb3250a71c548
+    guid: d3a490b3236040043b8f3c73db75b574
   - enabled: 1
     path: Assets/Scenes/Train-4.unity
     guid: f6a83aaf58e30e64bb1fa0e5fb5f3dac
