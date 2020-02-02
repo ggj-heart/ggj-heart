@@ -736,7 +736,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1829112033}
   selectedCommands:
-  - {fileID: 1829112048}
+  - {fileID: 1829112047}
   variables: []
   description: 
   stepPause: 0
@@ -1087,8 +1087,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: I am in a store, with friends.  A shadowy figure ends.  The figure begins
-    spreading throughout the room, as a coat of blackness.  My friends fade away.
+  storyText: I am in a store, with friends.  A shadowy figure enters.  The figure
+    begins spreading throughout the room, as a coat of blackness.  My friends fade
+    away.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

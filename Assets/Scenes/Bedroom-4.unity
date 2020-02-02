@@ -698,11 +698,10 @@ GameObject:
   - component: {fileID: 1829112043}
   - component: {fileID: 1829112041}
   - component: {fileID: 1829112044}
-  - component: {fileID: 1829112047}
-  - component: {fileID: 1829112046}
+  - component: {fileID: 1829112048}
   - component: {fileID: 1829112045}
   - component: {fileID: 1829112039}
-  - component: {fileID: 1829112048}
+  - component: {fileID: 1829112036}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -737,7 +736,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1829112033}
   selectedCommands:
-  - {fileID: 1829112047}
+  - {fileID: 1829112048}
   variables: []
   description: 
   stepPause: 0
@@ -763,7 +762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "Have to stay home where it\u2019s safe.  Sleeping.  Dreaming..."
+  storyText: "Back home. Where it\u2019s safe.  Respite.  Drifting to sleep.  Dreaming\u2026\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -802,10 +801,9 @@ MonoBehaviour:
   eventHandler: {fileID: 1829112034}
   commandList:
   - {fileID: 1829112032}
-  - {fileID: 1829112047}
-  - {fileID: 1829112046}
   - {fileID: 1829112045}
   - {fileID: 1829112039}
+  - {fileID: 1829112036}
   - {fileID: 1829112048}
   suppressAllAutoSelections: 0
 --- !u!114 &1829112034
@@ -837,6 +835,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829112036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829112030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  storyText: "On the horizon, a steep snow capped mountain pass, but also a village,
+    with friends, old and new.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1829112037
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -895,7 +921,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1829112039
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -905,9 +931,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 14
+  itemId: 18
   indentLevel: 0
-  storyText: "What\u2019s out there?  Am I ready?  I have to try.\r\n"
+  storyText: With courage in her heart, she leaps across the divide, and lands on
+    a lush grassy field in a valley.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1048,7 +1075,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1829112045
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1058,68 +1085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
+  itemId: 17
   indentLevel: 0
-  storyText: 'I am waking.  In my bed, home.  It is safe.  It is refuge.  There are
-    no threats and no risk.  No future.
-
-'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1829112046
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829112030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 12
-  indentLevel: 0
-  storyText: "My face turns to sand washing away in the current.  I scream but my
-    throat is made of stone and\u2026\r\n"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1829112047
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829112030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  storyText: A stone.  A statue.  Tossed into a great sea.  Years pass, my features
-    eroding away,
+  storyText: A hero embarks upon a great journey through fields of jagged glass and
+    heavy blizzards and reaches a great gap, a wide maw in the earth ready to swallow
+    her whole.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1148,6 +1118,6 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Journey-1
+    stringVal: Journey-4
   loadingImage: {fileID: 0}
   sceneNameOLD: 

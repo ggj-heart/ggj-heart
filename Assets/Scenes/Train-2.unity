@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Cara-SA
+  nameText: Cara
   nameColor: {r: 0.8207547, g: 0.15873085, b: 0.15873085, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -727,7 +727,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1660916734}
   selectedCommands:
-  - {fileID: 1660916733}
+  - {fileID: 1660916735}
   variables: []
   description: 
   stepPause: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Bedroom-2
+    stringVal: Bedroom-3
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1660916734
@@ -804,11 +804,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: "You: Even if there are catastrophes waiting for me, I have to try. 
-    I will think before I act, but I have to act at some point.  It\u2019s better
-    to make these mistakes sooner rather than later."
+  storyText: "Even if there are catastrophes waiting for me, I have to try.  I will
+    think before I act, but I have to act at some point.  It\u2019s better to make
+    these mistakes sooner rather than later."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 833680724}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -833,11 +833,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: "You:  So what if I make mistakes.  What\u2019s the worst that could
-    happen?  What matters is that whenever I try, there\u2019s a chance to succeed. 
-    If I stop trying, I will never succeed."
+  storyText: "So what if I make mistakes.  What\u2019s the worst that could happen? 
+    What matters is that whenever I try, there\u2019s a chance to succeed.  If I
+    stop trying, I will never succeed."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 833680724}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -862,10 +862,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: "Demon1: What about all the mistakes you could make?  All the catastrophes
-    that could happen?  It\u2019s not worth it.  Think before you act!"
+  storyText: "What about all the mistakes you could make?  All the catastrophes that
+    could happen?  It\u2019s not worth it.  Think before you act!"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1321367554}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -890,7 +890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: 'You: What if I make the right decisions?'
+  storyText: What if I make the right decisions?
   description: 
   character: {fileID: 833680724}
   portrait: {fileID: 0}
@@ -917,8 +917,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "Demon1:  What if you\u2019re not welcome?  What if you say something
-    wrong?  What if they hate you?  What if you make the wrong decisions?\r"
+  storyText: "What if you\u2019re not welcome?  What if you say something wrong? 
+    What if they hate you?  What if you make the wrong decisions?\r"
   description: 
   character: {fileID: 1321367554}
   portrait: {fileID: 0}
