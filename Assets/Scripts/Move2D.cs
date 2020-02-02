@@ -8,15 +8,22 @@ public class Move2D : MonoBehaviour
 {
     public float horizontalSpeed = 10f;
     public float jumpForce = 16f;
+    public SpriteRenderer sceneDivider;
     public bool isGrounded = true;
     public bool isAtEnd = false;
     public float horizontalAxis = 0f;
     private bool jumpPressed = false;
+    private AudioSource jumpAudioSource;
+    private AudioClip[] jumpClips;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sceneDivider.enabled = false;
+        jumpAudioSource = gameObject.AddComponent<AudioSource>();
+        jumpClips = new[] {
+            Resources.Load<AudioClip>("Audio/Jumping_Sound")
+        };
     }
 
     // Update is called once per frame
@@ -42,6 +49,10 @@ public class Move2D : MonoBehaviour
         if (jumpPressed && isGrounded)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            
+            var jumpClip = jumpClips[Random.Range(0, jumpClips.Length)];
+            jumpAudioSource.volume = Random.Range(0.2f, 0.8f);
+            jumpAudioSource.PlayOneShot(jumpClip);
         }
         jumpPressed = false;
     }
@@ -51,6 +62,8 @@ public class Move2D : MonoBehaviour
         if (collider.tag == "Finish")
         {
             isAtEnd = true;
+            sceneDivider.color = new Color(1, 1, 1, 0);
+            sceneDivider.enabled = true;
             StartCoroutine(LoadSceneAfterTransition());
         }
     }
@@ -58,7 +71,18 @@ public class Move2D : MonoBehaviour
     private IEnumerator LoadSceneAfterTransition()
     {
         //show animate out animation
-        yield return new WaitForSeconds(1f);
+        yield return FadeOut();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    // fade out over 1 second
+    IEnumerator FadeOut()
+    {
+        for (float i = 0; i <= 1f; i += 0.1f)
+        {
+            var c = sceneDivider.color;
+            sceneDivider.color = new Color(c.r, c.g, c.b, i);
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
