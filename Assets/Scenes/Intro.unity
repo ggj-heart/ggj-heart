@@ -381,6 +381,8 @@ GameObject:
   - component: {fileID: 979044986}
   - component: {fileID: 979044987}
   - component: {fileID: 979044988}
+  - component: {fileID: 979044989}
+  - component: {fileID: 979044990}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -511,11 +513,13 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 979044982}
   commandList:
+  - {fileID: 979044989}
   - {fileID: 979044981}
   - {fileID: 979044979}
   - {fileID: 979044980}
   - {fileID: 979044987}
   - {fileID: 979044988}
+  - {fileID: 979044990}
   - {fileID: 979044986}
   suppressAllAutoSelections: 0
 --- !u!114 &979044984
@@ -545,7 +549,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 979044983}
   selectedCommands:
-  - {fileID: 979044986}
+  - {fileID: 979044989}
   variables: []
   description: 
   stepPause: 0
@@ -631,6 +635,44 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: ba7bc1eaa8d7eb749a64dcd32ee1105a, type: 3}
   volume: 1
   waitUntilFinished: 1
+--- !u!114 &979044989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979044978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &979044990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979044978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &1008693854
 GameObject:
   m_ObjectHideFlags: 1

@@ -831,6 +831,8 @@ GameObject:
   - component: {fileID: 1829112048}
   - component: {fileID: 1829112036}
   - component: {fileID: 1829112039}
+  - component: {fileID: 1829112049}
+  - component: {fileID: 1829112050}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -865,7 +867,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1829112033}
   selectedCommands:
-  - {fileID: 1829112048}
+  - {fileID: 1829112049}
   variables: []
   description: 
   stepPause: 0
@@ -930,12 +932,14 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1829112034}
   commandList:
+  - {fileID: 1829112049}
   - {fileID: 1829112036}
   - {fileID: 1829112032}
   - {fileID: 1829112047}
   - {fileID: 1829112046}
   - {fileID: 1829112045}
   - {fileID: 1829112039}
+  - {fileID: 1829112050}
   - {fileID: 1829112048}
   suppressAllAutoSelections: 0
 --- !u!114 &1829112034
@@ -1299,3 +1303,41 @@ MonoBehaviour:
     stringVal: Journey-3
   loadingImage: {fileID: 2800000, guid: db081e6574c029e46932ada6644dee2c, type: 3}
   sceneNameOLD: 
+--- !u!114 &1829112049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829112030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1829112050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829112030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}

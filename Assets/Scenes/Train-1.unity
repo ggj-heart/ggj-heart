@@ -144,6 +144,8 @@ GameObject:
   - component: {fileID: 34274552}
   - component: {fileID: 34274554}
   - component: {fileID: 34274553}
+  - component: {fileID: 34274556}
+  - component: {fileID: 34274555}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -218,6 +220,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 34274541}
   commandList:
+  - {fileID: 34274556}
   - {fileID: 34274551}
   - {fileID: 34274552}
   - {fileID: 34274547}
@@ -228,6 +231,7 @@ MonoBehaviour:
   - {fileID: 34274554}
   - {fileID: 34274553}
   - {fileID: 34274550}
+  - {fileID: 34274555}
   - {fileID: 34274546}
   suppressAllAutoSelections: 0
 --- !u!114 &34274543
@@ -257,7 +261,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 34274542}
   selectedCommands:
-  - {fileID: 34274548}
+  - {fileID: 34274555}
   variables: []
   description: 
   stepPause: 0
@@ -517,6 +521,44 @@ MonoBehaviour:
   fadeDuration: 2
   waitUntilFinished: 0
   audioSourceOLD: {fileID: 0}
+--- !u!114 &34274555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34274539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &34274556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34274539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &486875327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Anxiety
-  nameColor: {r: 0.8207547, g: 0.15873085, b: 0.15873085, a: 1}
+  nameColor: {r: 0.8078432, g: 0.5882353, b: 0.38823533, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: dc801276e08f5494188c0485c6fc0a1a, type: 3}

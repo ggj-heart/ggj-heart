@@ -4961,7 +4961,7 @@ GameObject:
   - component: {fileID: 377794987}
   - component: {fileID: 377794986}
   m_Layer: 0
-  m_Name: Happy Music
+  m_Name: Sad Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4977,7 +4977,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 382c658f7ee888c479c6e2de38dc1884, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7f5fc93873c70be4f90f538353216914, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8731,6 +8731,7 @@ GameObject:
   - component: {fileID: 1685138237}
   - component: {fileID: 1685138236}
   - component: {fileID: 1685138234}
+  - component: {fileID: 1685138241}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -8827,6 +8828,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1685138238}
   - {fileID: 1685138237}
+  - {fileID: 1685138241}
   - {fileID: 1685138234}
   - {fileID: 1685138236}
   suppressAllAutoSelections: 0
@@ -8928,6 +8930,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685138241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685138232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &1734696459
 GameObject:
   m_ObjectHideFlags: 0
