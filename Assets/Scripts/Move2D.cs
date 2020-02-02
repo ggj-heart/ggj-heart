@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 // based on https://www.youtube.com/watch?v=L6Q6VHueWnU
 public class Move2D : MonoBehaviour
 {
-    public float horizontalSpeed = 5f;
-    public float jumpForce = 8f;
+    public float horizontalSpeed = 10f;
+    public float jumpForce = 16f;
     public bool isGrounded = true;
     public bool isAtEnd = false;
     public float horizontalAxis = 0f;
