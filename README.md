@@ -39,4 +39,4 @@ Made for Global Game Jam 2020 which had a theme of "repair".
 - Lab 7 for hosting the space
 - Sacramento Developer Collective
 
-- numerous articles, videos, documents, and tutorials
+- numerous articles, videos, documents, tutorials, and Q&A sites/forums
