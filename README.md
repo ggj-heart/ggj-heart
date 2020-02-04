@@ -2,7 +2,7 @@
 
 Go on a journey to repair your heart.
 
-[Download](https://globalgamejam.org/2020/games/cara-6) (Windows 64-bit from Progressive Game Jam site)
+[Download](https://globalgamejam.org/2020/games/cara-6) (Windows 64-bit from Global Game Jam site)
 
 Cara is a game about a girl with a broken heart, and in order to become whole again, she must confront her inner demons, and push herself to make her life better. It is a game that involves both narrative and platforming elements.
 
