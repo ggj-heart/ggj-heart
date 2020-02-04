@@ -70,7 +70,6 @@ public class Move2D : MonoBehaviour
 
     private IEnumerator LoadSceneAfterTransition()
     {
-        //show animate out animation
         yield return FadeOut();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -78,11 +77,11 @@ public class Move2D : MonoBehaviour
     // fade out over 1 second
     IEnumerator FadeOut()
     {
-        for (float i = 0; i <= 1f; i += 0.1f)
+        for (float i = 0; i <= 1f; i += Time.fixedDeltaTime)
         {
             var c = sceneDivider.color;
             sceneDivider.color = new Color(c.r, c.g, c.b, i);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
     }
 }
