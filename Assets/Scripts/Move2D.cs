@@ -13,6 +13,8 @@ public class Move2D : MonoBehaviour
     public bool isAtEnd = false;
     public float horizontalAxis = 0f;
     private bool jumpPressed = false;
+    private int touchDpadFingerId = -1;
+    private Vector2 touchDpadStartPosition;
     private AudioSource jumpAudioSource;
     private AudioClip[] jumpClips;
 
@@ -36,12 +38,55 @@ public class Move2D : MonoBehaviour
 
     void Update()
     {
+        // handle input from keyboard or gamepad
         horizontalAxis = Input.GetAxis("Horizontal");
-        GetComponent<SpriteRenderer>().flipX = (horizontalAxis < 0);
         if (Input.GetButtonDown("Jump"))
         {
             jumpPressed = true;
         }
+
+        // handle touch input for mobile devices (left side is virtual d-pad, right side is jump)
+        if (Input.touchCount > 0)
+        {
+            foreach (var touch in Input.touches)
+            {
+                if ((touch.position.x < 0 && touchDpadFingerId == -1) ||
+                    touch.fingerId == touchDpadFingerId)
+                {
+                    switch (touch.phase)
+                    {
+                        case TouchPhase.Began:
+                            touchDpadFingerId = touch.fingerId;
+                            touchDpadStartPosition = touch.position;
+                            horizontalAxis = 0f;
+                            break;
+                        case TouchPhase.Ended:
+                        case TouchPhase.Canceled:
+                            touchDpadFingerId = -1;
+                            touchDpadStartPosition = Vector2.zero;
+                            horizontalAxis = 0f;
+                            break;
+                        case TouchPhase.Moved:
+                        case TouchPhase.Stationary:
+                            var x = (touch.position - touchDpadStartPosition).x / Screen.width * 10f;
+                            if (Mathf.Abs(x) < 0.1f) {
+                                x = 0f;
+                            }
+                            horizontalAxis = Mathf.Clamp(x, -1f, 1f);
+                            break;
+                    }
+                    continue;
+                }
+
+                if (touch.position.x > 0 && touch.phase == TouchPhase.Began)
+                {
+                    jumpPressed = true;
+                }
+            }
+        }
+
+        // update direction of player character
+        GetComponent<SpriteRenderer>().flipX = (horizontalAxis < 0);
     }
 
     void Jump()
