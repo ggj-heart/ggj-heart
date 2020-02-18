@@ -15,6 +15,7 @@ public class Move2D : MonoBehaviour
     private bool jumpPressed = false;
     private int touchDpadFingerId = -1;
     private Vector2 touchDpadStartPosition;
+    private float lastJump;
     private AudioSource jumpAudioSource;
     private AudioClip[] jumpClips;
 
@@ -48,9 +49,10 @@ public class Move2D : MonoBehaviour
         // handle touch input for mobile devices (left side is virtual d-pad, right side is jump)
         if (Input.touchCount > 0)
         {
+            var midpoint = Screen.width / 2f;
             foreach (var touch in Input.touches)
             {
-                if ((touch.position.x < 0 && touchDpadFingerId == -1) ||
+                if ((touch.position.x < midpoint && touchDpadFingerId == -1) ||
                     touch.fingerId == touchDpadFingerId)
                 {
                     switch (touch.phase)
@@ -78,7 +80,7 @@ public class Move2D : MonoBehaviour
                     continue;
                 }
 
-                if (touch.position.x > 0 && touch.phase == TouchPhase.Began)
+                if (touch.position.x > midpoint && touch.phase == TouchPhase.Began)
                 {
                     jumpPressed = true;
                 }
@@ -91,8 +93,10 @@ public class Move2D : MonoBehaviour
 
     void Jump()
     {
-        if (jumpPressed && isGrounded)
+        // only allow jumping from ground and prevent jump force from being applied twice in a row
+        if (jumpPressed && isGrounded && (Time.timeSinceLevelLoad - lastJump) > 0.1f)
         {
+            lastJump = Time.timeSinceLevelLoad;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             
             var jumpClip = jumpClips[Random.Range(0, jumpClips.Length)];
