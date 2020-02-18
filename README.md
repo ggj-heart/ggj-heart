@@ -2,7 +2,7 @@
 
 Go on a journey to repair your heart.
 
-[Play online](https://ggj-heart.github.io/) (desktop browsers only)
+[Play online](https://ggj-heart.github.io/) (now with experimental mobile support)
 
 [Download](https://globalgamejam.org/2020/games/cara-6) (Windows 64-bit from Global Game Jam site)
 
@@ -41,6 +41,6 @@ Made for Global Game Jam 2020 which had a theme of "repair".
 
 - Global Game Jam
 - Lab 7 for hosting the space
-- Sacramento Developer Collective
+- Sacramento Developer Collective and all the volunteers
 
 - numerous articles, videos, documents, tutorials, and Q&A sites/forums
